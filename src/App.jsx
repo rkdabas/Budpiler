@@ -5,6 +5,7 @@ import { PlaygroundScreen } from "./screens/PlaygroundScreen";
 import { PlaygroundProvider } from "./Providers/PlaygroundProvider.jsx";
 import { ModalProvider } from "./Providers/ModalProvider.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         </ModalProvider>
       </PlaygroundProvider>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 };
