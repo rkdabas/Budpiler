@@ -4,6 +4,7 @@ import { HomeScreen } from "./screens/HomeScreen";
 import { PlaygroundScreen } from "./screens/PlaygroundScreen";
 import { PlaygroundProvider } from "./Providers/PlaygroundProvider.jsx";
 import { ModalProvider } from "./Providers/ModalProvider.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           </BrowserRouter>
         </ModalProvider>
       </PlaygroundProvider>
+      <Analytics />
     </>
   );
 };
